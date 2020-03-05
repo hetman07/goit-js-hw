@@ -3,11 +3,10 @@
 const formatString = function (string) {
     const limit = 40;
     let lengthString = string.length;
-    if (lengthString < limit) {} else {
-        let stringArray = string.split(''); //делаю массив
-        stringArray.length = 40; // обрезаю до 40 символов
-        stringArray.push('...'); // добавляю ... в конце
-        string = stringArray.join(''); // склеиваю массив
+    if (lengthString > limit) {
+        const point = '...';
+        let newString = string.slice(0, 39); //создаю новую строку необходимой величины
+        string = newString.concat('...');
     }
     return string;
 };

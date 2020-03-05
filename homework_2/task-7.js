@@ -15,11 +15,8 @@ const isLoginValid = function (login) {
 
 const isLoginUnique = function (logins, login) {
     let result = true;
-    for (const user of logins) {
-        if (user === login) {
-            result = false;
-            break;
-        }
+    if (logins.includes(login)) {
+        result = false;
     }
     return result;
 };
@@ -27,17 +24,21 @@ const isLoginUnique = function (logins, login) {
 const addLogin = function (logins, login) {
     console.log(login);
     let result = false;
-    if (isLoginUnique(login) === true) {
-        if (isLoginValid(login) === true) {
+
+    if (isLoginValid(login) === true) {
+        if (isLoginUnique(logins, login) === true) {
             logins.push(login);
             alert('Логин успешно добавлен!');
             result = true;
+        } else {
+            alert('Такой логин уже используется!');
         }
+    } else {
         alert('Ошибка! Логин должен быть от 4 до 16 символов');
+
     }
     return result;
-    alert('Такой логин уже используется!', login);
-};
+}
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
