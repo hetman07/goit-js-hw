@@ -1,19 +1,19 @@
 'use strict';
 
 class StringBuilder {
-    constructor(value){
+    constructor(value) {
         this._value = value;
     }
-    get value(){
+    get value() {
         return this._value;
     }
-    append(str){
+    append(str) {
         this._value = this._value + str;
     }
-    prepend(str){
+    prepend(str) {
         this._value = str + this._value;
     }
-    pad(str){
+    pad(str) {
         this._value = str + this._value + str;
     }
 }
