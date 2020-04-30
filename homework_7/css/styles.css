@@ -1,0 +1,41 @@
+img{
+    display: block;
+    max-width: 100%;
+    height:auto;
+}
+
+#gallery{
+    display: flex;
+     justify-content: space-between; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:  0 auto;
+    padding: 0;
+    padding-top: 10px;
+    list-style: none;
+}
+
+.gallery__item{
+    flex-basis: 252px; 
+    position: relative; 
+}
+
+.gallery__item-img{
+    width: 252px;
+    height: 142px;
+    margin-bottom: 24px;  
+}
+
+#validation-input {
+    border: 3px solid #bdbdbd;
+  }
+  
+  #validation-input.valid {
+    border-color: #4caf50;
+  }
+  
+  #validation-input.invalid {
+    border-color: #f44336;
+  }
+
+  
