@@ -1,0 +1,29 @@
+{{#each this}}
+<h2 class='js-section__title'>{{name}}</h2>
+<div class='template wrapper'>
+    <div class='country__data'>
+        <div class='country__part'>
+            <p class='country__part-title'>Capital:</p>
+            <p class='country__part-description'>{{capital}}</p>
+        </div>
+        <div class='country__part'>
+            <p class='country__part-title'>Population:</p>
+            <p class='country__part-description'>{{population}}</p>
+        </div>
+        <div class='country__part'>
+            <p class='country__part-title'>Languages:</p>
+            <ul class='js-section__list language__list'>
+                {{#each languages}}
+                <li>
+                    <p class='country__part-description'>{{name}}</p>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    <div class='country__flag'>
+        <img src="{{flag}}" alt="flag of country" width='600'>
+    </div>
+</div>
+
+{{/each}}
