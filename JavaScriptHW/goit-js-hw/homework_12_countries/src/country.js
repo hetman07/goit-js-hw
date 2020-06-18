@@ -8,8 +8,8 @@ import {
 
 import countryService from './fetchCountries.js';
 
-import tamplate_countries from './template//countries.hbs'; //шаблон в который будут вставляться данные для формирования разметки
-import tamplate_country from './template//country.hbs'; // шаблон для одной страны
+import tamplate_countries from './template/countries.hbs'; //шаблон в который будут вставляться данные для формирования разметки
+import tamplate_country from './template/country.hbs'; // шаблон для одной страны
 
 const input = document.querySelector('#data-input');
 const countryList = document.querySelector('.js-section');
