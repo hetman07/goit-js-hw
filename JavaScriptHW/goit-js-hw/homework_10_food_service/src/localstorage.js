@@ -11,7 +11,7 @@ const Theme = {
 //при первой загрузке страницы
 const persistedTheme = localStorage.getItem('Theme');
 console.log('persistedTheme', persistedTheme);
-if (persistedTheme === null) {
+if (persistedTheme === null || persistedTheme === Theme.LIGHT) {
   //при первой загрузке странице по умолчанию светлая тема поэтому даю класс light-theme тегу body
   refs.bodyEl.classList.add(Theme.LIGHT);
   localStorage.setItem('Theme', Theme.LIGHT);
