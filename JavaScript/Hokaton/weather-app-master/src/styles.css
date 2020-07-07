@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+
+  font-size: 14px;
+  background-color: rgba(34, 94, 47, 0.59);
+}
+
+.vh-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.vh-weather {
+  color: rgb(255, 255, 255);
+}
+
+.vh-degree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.vh-bg {
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
+  min-height: 190px;
+  margin-bottom: 32px;
+
+  background-color: rgb(16, 33, 54);
+  border-radius: 35px;
+  box-shadow: 0px 8px 43px 0px rgba(16, 33, 54, 0.59);
+}
+
+.vh-degree__img {
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.vh-degree__country {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.vh-degree__country,
+.vh-item__name {
+  color: rgb(255, 255, 255, 0.302);
+}
+
+.vh-degree__temperatura {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.vh-temperatura-now {
+  margin: 0;
+  padding: 0;
+  font-size: 45px;
+  min-width: 75px;
+}
+
+.vh-temperatura-list {
+  min-width: 95px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.vh-item__name,
+.vh-item__temprt {
+  margin: 0;
+  padding: 0;
+}
+
+.vh-data__bg {
+  opacity: 0.6;
+}
+
+/* стили для блока с кнопками */
+.vh-button {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.vh-btns {
+  min-width: 122px;
+  min-height: 25px;
+  border: 2px solid rgb(255, 255, 255);
+  opacity: 0.541;
+  border-radius: 40px;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+
+  transition: transform 200ms ease-in-out;
+}
+
+.vh-btns:hover,
+.vh-btns:focus {
+  /* width: 126px;
+  height: 29px; */
+  background-color: rgb(247, 247, 247);
+  opacity: 1;
+  cursor: pointer;
+
+  transform: scale(1.03);
+}
+
+/*TABLE*/
+@media (min-width:768px) {
+  .wrapper {
+    width: 660px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width:960px) {
+  .wrapper {
+    width: 940px;
+  }
+}

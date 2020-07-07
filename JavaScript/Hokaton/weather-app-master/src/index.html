@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Dinosaur weather</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- style -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+  <section class="wrapper vh-weather">
+    <!-- блок с погодой -->
+    <div class="vh-degree vh-bg">
+      <img src="./images/exmpl/icons8-cloud-48.png" alt="cloud" class="vh-degree__img">
+      <p class="vh-degree__country">Kyiv, UA</p>
+      <div class="vh-degree__temperatura">
+        <div class="vh-temperatura-now">-3</div>
+        <ul class="vh-temperatura-list vh-list">
+          <li class="vh-list__item">
+            <p class="vh-item__name">min</p>
+            <p class="vh-item__temprt">-2</p>
+          </li>
+          <li class="vh-list__item">
+            <p class="vh-item__name">max</p>
+            <p class="vh-item__temprt">-3</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- блок  навигации кнопки -->
+    <div class="vh-button">
+      <button class="vh-btns__today vh-btns">TODAY</button>
+      <button class="vh-btns__fivedays vh-btns">5 DAYS</button>
+    </div>
+    <!-- блок с датой и временем восхода и захода солнца -->
+    <div class="vh-data vh-bg vh-data__bg">
+      <p class="vh-data__date">8th Sat</p>
+
+      <ul class="vh-data__date-list vh-list">
+        <li class="vh-date__item">February</li>
+        <li class="vh-date__item">21:30:56</li>
+      </ul>
+
+      <ul class="vh-data__sun-list vh-list">
+        <li class="vh-sun__item vh-icon__sunrise">07:04</li>
+        <li class="vh-sun__item vh-icon__sunset">17:05</li>
+      </ul>
+    </div>
+    <!-- блок с цитатой -->
+    <div class="vh-quote">
+      <p class="vh-quote__text">Who cares about the clouds whn we're together? Just sing a song and bring the sunny
+        weather.</p>
+      <p class="vh-quote__author">Dale Evans</p>
+    </div>
+
+  </section>
+
+</body>
+
+</html>
